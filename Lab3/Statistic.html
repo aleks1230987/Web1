@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <title>Статистика</title>
+    </head>
+    <body>
+
+        
+        <a name="Table"></a>
+        <p>
+          <a href="Main.html#main">Дикие животные</a><br>
+          <a href="Statistics.html#Table"><strong>Список животных</strong></a>
+        </p>
+      <hr>   
+
+        
+<details> 
+  <summary>График</summary>
+
+<table cellpadding="5">
+  <tr> 
+    <th>Значение по оси OX</th>
+    <th>Результат</th>
+  </tr>
+
+  <tr>
+    <td>
+      <input  type="radio"  name="Type">Тип<br>
+    <input  type="radio"  name="Otryad">Отряд<br>
+    <input  type="radio"  name="Semeystvo">Семейство<br>
+  </td>
+
+  <td>
+    <input type="checkbox" name="what"> Число особей<br>
+    <input type="checkbox" name="what"> Максимальная длина тела <br>
+    <input type="checkbox" name="what"> Минимальная длина тела <br>
+  </td>
+</tr>
+</table>
+
+<p>
+  <input type="submit" value="Построить">
+</p>
+<p>Здесь будет график</p>
+
+</details>
+
+
+<details> 
+  <summary>Фильтр</summary>
+
+  <form>
+    <p>
+      Наименование: <input type="text" placeholder="Введите наименование">
+    </p>
+    <p>
+      Тип: <input type="text" placeholder="Введите тип животного">
+    </p>
+    <p>
+      Отряд: <input type="text" placeholder="Введите отряд животного">
+    </p>
+    <p>
+      Семейство: <input type="text" placeholder="Введите семейство животного">
+    </p>
+    <p>
+      Популяция: от <input type="number" placeholder="0 тыс" min="0" max="2000"> до <input type="number" placeholder="2000 тыс" min="0" max="2000">
+    </p>
+    <p>
+      Средняя длина тела: от <input type="number" placeholder="1 см" min="1" max="1000"> до <input type="number" placeholder="1000 см" min="1" max="1000">
+    </p>
+    <p>
+      Ареал обитания: <input type="text" placeholder="Введите место обитания">
+    </p>
+  </form>
+
+  <input type="submit" value="Найти">
+  <p></p>
+
+</details>
+
+
+<details> 
+  <summary>Сортировка</summary>
+
+   Первый уровень: <select name="1lv">
+    <option value="first" selected> Нет </option>
+    <option value="second"> Наименование </option>
+    <option value="third"> Тип </option>
+    <option value="fourth"> Отряд </option>
+    <option value="fifth"> Семейство </option>
+    <option value="sixth" > Популяция </option>
+    <option value="seventh"> Средняя длина тела </option>
+    <option value="eighth"> Ареал обитания </option>
+   </select>
+   по убыванию? <input type="checkbox" name="1lv">
+   <br>
+   
+   Второй уровень: <select name="2lv">
+    <option value="first" selected> Нет </option>
+    <option value="second"> Наименование </option>
+    <option value="third"> Тип </option>
+    <option value="fourth"> Отряд </option>
+    <option value="fifth"> Семейство </option>
+    <option value="sixth" > Популяция </option>
+    <option value="seventh"> Средняя длина тела </option>
+    <option value="eighth"> Ареал обитания </option>
+   </select>
+   по убыванию? <input type="checkbox" name="2lv">
+   <br>
+   
+   Третий уровень: <select name="3lv">
+    <option value="first" selected> Нет </option>
+    <option value="second"> Наименование </option>
+    <option value="third"> Тип </option>
+    <option value="fourth"> Отряд </option>
+    <option value="fifth"> Семейство </option>
+    <option value="sixth" > Популяция </option>
+    <option value="seventh"> Средняя длина тела </option>
+    <option value="eighth"> Ареал обитания </option>
+   </select>
+   по убыванию? <input type="checkbox" name="3lv">
+   <br>
+
+   <p><input type="submit" value="Сортировать">
+   </p>
+
+</details>
+
+<p></p>
+<table border="3" cellspacing="0" cellpadding="6">
+  
+  <tr>
+    <th>Наименование</th>
+    <th>Тип</th>
+    <th>Отряд</th>
+    <th>Семейство</th>
+    <th>Популяция (тыс)</th>
+    <th>Средняя длина тела (см)</th>
+    <th>Ареал обитания</th>
+  </tr>
+  <tr>
+    <td>Лев</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Кошачьи</td>
+    <td>20</td>
+    <td>250</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Тигр</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Кошачьи</td>
+    <td>3</td>
+    <td>270</td>
+    <td>Азия</td>
+  </tr>
+  <tr>
+    <td>Слон</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Слоновые</td>
+    <td>415</td>
+    <td>300</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Жираф</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Жирафовые</td>
+    <td>68</td>
+    <td>500</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Гепард</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Кошачьи</td>
+    <td>7</td>
+    <td>135</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Бегемот</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Бегемотовые</td>
+    <td>125</td>
+    <td>360</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Крокодил</td>
+    <td>Рептилия</td>
+    <td>Крокодилообразные</td>
+    <td>Крокодиловые</td>
+    <td>1,2</td>
+    <td>400</td>
+    <td>Южная Америка</td>
+  </tr>
+  <tr>
+    <td>Лема</td>
+    <td>Млекопитающее</td>
+    <td>Приматы</td>
+    <td>Лемуровые</td>
+    <td>2</td>
+    <td>45</td>
+    <td>Мадагаскар</td>
+  </tr>
+  <tr>
+    <td>Панда</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Медвежьи</td>
+    <td>1,8</td>
+    <td>150</td>
+    <td>Китай</td>
+  </tr>
+  <tr>
+    <td>Орёл</td>
+    <td>Птица</td>
+    <td>Ястребиные</td>
+    <td>Ястребиные</td>
+    <td>300</td>
+    <td>75</td>
+    <td>Всемирно</td>
+  </tr>
+  <tr>
+    <td>Кенгуру</td>
+    <td>Млекопитающее</td>
+    <td>Непарнопалые</td>
+    <td>Кенгуровые</td>
+    <td>50</td>
+    <td>200</td>
+    <td>Австралия</td>
+  </tr>
+  <tr>
+    <td>Лосось</td>
+    <td>Рыба</td>
+    <td>Лососеобразные</td>
+    <td>Лососевые</td>
+    <td>180</td>
+    <td>80</td>
+    <td>Северная Америка</td>
+  </tr>
+  <tr>
+    <td>Аллигатор</td>
+    <td>Рептилия</td>
+    <td>Крокодилообразные</td>
+    <td>Аллигаторовые</td>
+    <td>1,5</td>
+    <td>400</td>
+    <td>Северная Америка</td>
+  </tr>
+  <tr>
+    <td>Сурикат</td>
+    <td>Млекопитающее</td>
+    <td>Марсовые</td>
+    <td>Сурикатовые</td>
+    <td>38</td>
+    <td>30</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Зебра</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Лошадиные</td>
+    <td>200</td>
+    <td>250</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Волк</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Собачьи</td>
+    <td>200</td>
+    <td>150</td>
+    <td>Северное полушарие</td>
+  </tr>
+  <tr>
+    <td>Носорог</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Носороговые</td>
+    <td>25</td>
+    <td>300</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Муравьед</td>
+    <td>Млекопитающее</td>
+    <td>Муравьедовые</td>
+    <td>Муравьедовые</td>
+    <td>46</td>
+    <td>150</td>
+    <td>Центральная Америка</td>
+  </tr>
+  <tr>
+    <td>Карибу</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Оленевые</td>
+    <td>2</td>
+    <td>130</td>
+    <td>Северная Америка</td>
+  </tr>
+  <tr>
+    <td>Тапир</td>
+    <td>Млекопитающее</td>
+    <td>Непарнопалые</td>
+    <td>Тапировые</td>
+    <td>30</td>
+    <td>170</td>
+    <td>Азия</td>
+  </tr>
+  <tr>
+    <td>Капибара</td>
+    <td>Млекопитающее</td>
+    <td>Грызуны</td>
+    <td>Капибаровые</td>
+    <td>1000</td>
+    <td>130</td>
+    <td>Южная Америка</td>
+  </tr>
+  <tr>
+    <td>Мандригал</td>
+    <td>Птица</td>
+    <td>Воробьиные</td>
+    <td>Воробьиные</td>
+    <td>1000</td>
+    <td>15</td>
+    <td>Всемирно</td>
+  </tr>
+  <tr>
+    <td>Лиса</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Собачьи</td>
+    <td>1000</td>
+    <td>90</td>
+    <td>Всемирно</td>
+  </tr>
+  <tr>
+    <td>Ягуар</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Кошачьи</td>
+    <td>15</td>
+    <td>160</td>
+    <td>Южная Америка</td>
+  </tr>
+  <tr>
+    <td>Дельфин</td>
+    <td>Млекопитающее</td>
+    <td>Китообразные</td>
+    <td>Дельфиновые</td>
+    <td>600</td>
+    <td>250</td>
+    <td>Мировой океан</td>
+  </tr>
+  <tr>
+    <td>Медведь</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Медвежьи</td>
+    <td>200</td>
+    <td>150</td>
+    <td>Северное полушарие</td>
+  </tr>
+  <tr>
+    <td>Дикун</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Свиньи</td>
+    <td>100</td>
+    <td>150</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Коала</td>
+    <td>Млекопитающее</td>
+    <td>Непарнопалые</td>
+    <td>Сумчатые</td>
+    <td>80</td>
+    <td>60</td>
+    <td>Австралия</td>
+  </tr>
+  <tr>
+    <td>Гризли</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Медвежьи</td>
+    <td>50</td>
+    <td>270</td>
+    <td>Северная Америка</td>
+  </tr>
+  <tr>
+    <td>Морская черепаха</td>
+    <td>Рептилия</td>
+    <td>Черепахи</td>
+    <td>Доктора</td>
+    <td>20</td>
+    <td>150</td>
+    <td>Тропические моря</td>
+  </tr>
+  <tr>
+    <td>Птица-убийца</td>
+    <td>Птица</td>
+    <td>Воробьиные</td>
+    <td>Мухоловковые</td>
+    <td>25</td>
+    <td>30</td>
+    <td>Южная Америка</td>
+  </tr>
+  <tr>
+    <td>Барсук</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Барсуковые</td>
+    <td>700</td>
+    <td>90</td>
+    <td>Европа</td>
+  </tr>
+  <tr>
+    <td>Синица</td>
+    <td>Птица</td>
+    <td>Воробьиные</td>
+    <td>Синицевые</td>
+    <td>300</td>
+    <td>15</td>
+    <td>Европа</td>
+  </tr>
+  <tr>
+    <td>Игуана</td>
+    <td>Рептилия</td>
+    <td>Чешуйчатые</td>
+    <td>Игуановые</td>
+    <td>50</td>
+    <td>150</td>
+    <td>Центральная Америка</td>
+  </tr>
+  <tr>
+    <td>Саванна</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Жирафовые</td>
+    <td>30</td>
+    <td>180</td>
+    <td>Африка</td>
+  </tr>
+  <tr>
+    <td>Бобёр</td>
+    <td>Млекопитающее</td>
+    <td>Грызуны</td>
+    <td>Бобровые</td>
+    <td>200</td>
+    <td>100</td>
+    <td>Северная Америка</td>
+  </tr>
+  <tr>
+    <td>Шимпанзе</td>
+    <td>Млекопитающее</td>
+    <td>Приматы</td>
+    <td>Гоминиды</td>
+    <td>200</td>
+    <td>150</td>
+    <td>Западная Африка</td>
+  </tr>
+  <tr>
+    <td>Горилла</td>
+    <td>Млекопитающее</td>
+    <td>Приматы</td>
+    <td>Гоминиды</td>
+    <td>100</td>
+    <td>160</td>
+    <td>Центральная Африка</td>
+  </tr>
+  <tr>
+    <td>Динго</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Собачьи</td>
+    <td>75</td>
+    <td>100</td>
+    <td>Австралия</td>
+  </tr>
+  <tr>
+    <td>Сарна</td>
+    <td>Млекопитающее</td>
+    <td>Парнопалые</td>
+    <td>Оленевые</td>
+    <td>200</td>
+    <td>90</td>
+    <td>Азия</td>
+  </tr>
+  <tr>
+    <td>Куры дикие</td>
+    <td>Птица</td>
+    <td>Гребенчатые</td>
+    <td>Фазановыми</td>
+    <td>1500</td>
+    <td>30</td>
+    <td>Южная Азия</td>
+  </tr>
+  <tr>
+    <td>Динозавры</td>
+    <td>Рептилия</td>
+    <td>Динозавры</td>
+    <td>Динозавриные</td>
+    <td>0</td>
+    <td>236</td>
+    <td>Всемирно</td>
+  </tr>
+  <tr>
+    <td>Кальмар</td>
+    <td>Моллюск</td>
+    <td>Цефалоподовые</td>
+    <td>Кальмары</td>
+    <td>240</td>
+    <td>70</td>
+    <td>Мировой океан</td>
+</tr>
+<tr>
+    <td>Гиена</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Гиеновые</td>
+    <td>33</td>
+    <td>90</td>
+    <td>Африка, Азия</td>
+</tr>
+<tr>
+    <td>Амурский тигр</td>
+    <td>Млекопитающее</td>
+    <td>Хищные</td>
+    <td>Кошачьи</td>
+    <td>500</td>
+    <td>300</td>
+    <td>Азия</td>
+</tr>
+<tr>
+    <td>Гарпия</td>
+    <td>Птица</td>
+    <td>Ястребиные</td>
+    <td>Ястребиные</td>
+    <td>20</td>
+    <td>110</td>
+    <td>Центральная и Южная Америка</td>
+</tr>
+<tr>
+    <td>Колибри</td>
+    <td>Птица</td>
+    <td>Насекомоядные</td>
+    <td>Колибри</td>
+    <td>500</td>
+    <td>10</td>
+    <td>Северная и Южная Америка</td>
+</tr>
+<tr>
+    <td>Слоновая черепаха</td>
+    <td>Рептилия</td>
+    <td>Черепахи</td>
+    <td>Гигантские черепахи</td>
+    <td>1,5</td>
+    <td>120</td>
+    <td>Сейшелы, Мадагаскар</td>
+</tr>
+<tr>
+    <td>Спинозаурус</td>
+    <td>Рептилия</td>
+    <td>Динозавры</td>
+    <td>Спинозавровые</td>
+    <td>1,4</td>
+    <td>150</td>
+    <td>Северная Африка</td>
+</tr>
+<tr>
+    <td>Сурикат</td>
+    <td>Млекопитающее</td>
+    <td>Марсовые</td>
+    <td>Сурикатовые</td>
+    <td>38</td>
+    <td>25</td>
+    <td>Африка</td>
+ 
+</table>
+
+    </body>
+</html>
