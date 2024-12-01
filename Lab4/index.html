@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Лабораторная работа Bootstrap</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+ </head>
+ 
+ <body>
+ 
+ <header>
+	<nav class="navbar navbar-expand-md bg-light navbar-light mb-3">
+
+		<a class="navbar-brand" href="#">Дикие животные</a>
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Пума</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disable" href="#">Статистика</a>
+				</li>
+			</ul>
+
+			<form class="d-flex">
+				<input class="form-control" type="text" placeholder="Найти">
+				<button class="btn btn-outline-success" type="submit">Найти</button>
+			</form>
+
+		</div>
+	</nav>
+</header>
+
+<div id="gallery" class="carousel slide carousel-dark" data-bs-ride="carousel">
+
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="images/bear.jfif" class="d-block mx-auto" alt="">
+		</div>
+		<div class="carousel-item">
+			<img src="images/lisa.jfif" class="d-block mx-auto" alt="">
+		</div>
+		<div class="carousel-item">
+			<img src="images/nosorog.jfif" class="d-block mx-auto" alt="">
+		</div>
+		<div class="carousel-item">
+			<img src="images/puma.jpg" class="d-block mx-auto" alt="">
+		</div>
+		<div class="carousel-item">
+			<img src="images/racoon.jfif" class="d-block mx-auto" alt="">
+		</div>
+	</div>
+
+	<button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Предыдущий</span>
+	</button>
+
+	<button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Следующий</span>
+	</button>
+
+</div>
+ 
+ <div class="row p-3 justify-content-center">
+	<div class="col-11 col-md-9 col-xl-6 overflow-hidden" style="height:500px">
+		<div class="text-center">
+			<img src="images/boar.jpg" class="w-100" alt="">
+		</div>
+			
+		<h5 class="text-primary text-center p-3">Кабан</h5>
+		<p>Кабан (или вепрь) — парнокопытное млекопитающее из рода кабанов 
+		семейства свиных. Является предком домашней свиньи.</p>
+		<p>Кабан — всеядное парнокопытное нежвачное млекопитающее из рода кабанов. 
+		Отличается от домашней свиньи, которая несомненно произошла от кабана 
+		(и других близких видов), обладает более коротким и плотным телом, более 
+		толстыми и высокими ногами; кроме того, голова у кабана длиннее и тоньше, 
+		уши длиннее, острее и притом стоячие. Постоянно растущие верхние и нижние клыки, 
+		торчащие изо рта вверх, у самца гораздо более развиты, чем у самки.</p>
+		<p>Ареал кабанов самый широкий среди всего семейства свиней и один из широчайших 
+		среди наземных млекопитающих. Дикие кабаны водятся в широколиственных 
+		(буковых и дубовых) и смешанных лесах материковой Средней Европы (от Атлантики до Урала);
+		в Средиземноморье, включая также отдельные районы Северной Африки, 
+		в том числе горы Атлас и Киренаику (в древности его ареал доходил 
+		вдоль долины Нила до Хартума на юге).</p>
+	</div>
+		
+</div>
+
+<div class="row m-4 justify-content-evenly p-3">
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/bear.jfif" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Медведь</h5>
+				</div>
+			</div>
+			<div>
+				<p>Бурый медведь (или обыкновенный медведь) — млекопитающее семейства медвежьих;
+				один из самых крупных наземных хищников и один из самых распространённых представителей семейства медвежьих.</p>
+				<p>Сейчас бурый медведь продолжает восстанавливать популяцию на большей части ареала; в остальных областях малочислен. В Западной Европе его разобщённые
+				 популяции сохранились на Пиренеях, Кантабрийских горах, Альпах и Апеннинах. Довольно распространён в Скандинавии и Финляндии, встречается в
+				 лесах Центральной Европы и в Карпатах. В Финляндии бурый медведь объявлен национальным животным.</p>
+				<p>Бурый медведь внесён в Красную книгу МСОП со статусом «вид, находящийся под угрозой», однако его численность сильно разнится от популяции к популяции. 
+				Наибольшая популяция обитает в России — свыше 300 000 особей, в США — 32 500(95 % живёт на Аляске) и Канаде — 21 750. В Европе сохранилось 
+				около 14 000 особей. К 2001 году в европейской части России популяция бурого медведя увеличилась и с тех пор постоянно растёт, в то время 
+				как на Кавказе и в Средней Азии напротив, численность уменьшилась.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/lisa.jfif" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Лиса</h5>
+				</div>
+				
+			</div>
+			<div>
+				<p>Лисы — это мелкие или средние хищные млекопитающие из семейства псовых (Canidae). Наиболее известным представителем является красная лиса (Vulpes vulpes), распространенная в разных уголках мира.</p>
+				<p>Лисы имеют стройное тело, длинный пушистый хвост и острые уши. Их шерсть может варьироваться по цвету от рыжего до серого, черного и белого в зависимости от вида.</p>
+				<p>Лисы обитают в различных экосистемах, включая леса, степи, пустыни и даже городские районы. Они хорошо адаптируются к изменениям среды обитания.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/nosorog.jfif" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Носорог</h5>
+				</div>
+			</div>
+			<div>
+				<p>Носороги — это крупные млекопитающие, принадлежащие к семейству носороговых (Rhinocerotidae). Существует пять основных видов носорогов, каждый из которых обладает уникальными чертами.</p>
+				<p>Существует пять видов носорогов: белый носорог, черный носорог, индийский носорог, яванский носорог и суматранский носорог. Каждый вид отличается по размеру, форме рога и среде обитания.</p>
+				<p>Носороги одни из самых крупных наземных млекопитающих. Взрослый белый носорог может весить до 2,5 тонн, а индийский носорог — около 2 тонн.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/puma.jpg" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Пума</h5>
+				</div>
+			</div>
+			<div>
+				<p>Пума выглядит сильной кошкой, у нее очень гибкое тело, с длинным мускулистым хвостом. Лапы приспособлены для лазания по деревьям. Пума имеет короткую и густую шерсть.</p>
+				<p>Длина тела пумы 100-180 см, длина хвоста 60-75 см. Высота в холке 60-90 см, вес пумы может достигать 100 кг. Примечательно, что самцы значительно крупнее самок.
+				Средний вес женских особей колеблется в пределах 30-50 кг, а мужских – 60-80 кг.</p>
+				<p>Пума – заграничный представитель больших диких кошек. Живет пума в Северной и Южной Америке, населяет довольно большую площадь, - от Юкона (Канада) до Патагонии (Южная Америка).</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/racoon.jfif" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Енот</h5>
+				</div>
+			</div>
+			<div>
+				<p>Еноты — это небольшие млекопитающие из семейства енотовых (Procyonidae), широко известные своим характерным внешним видом и юрким поведением.</p>
+				<p>Еноты имеют плотное тело, короткие ноги и мощные лапы. Их шерсть обычно серого или бурого цвета с характерным черным "маской" на лице и кольцевым хвостом.</p>
+				<p>В основном еноты распространены в Северной и Центральной Америке. Они обитают в разнообразных экосистемах, включая леса, парки, пригородные районы и даже городские пространства.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/ryas.jpg" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Рысь</h5>
+				</div>
+			</div>
+			<div>
+				<p>Рыси — род хищных млекопитающих семейства кошачьих, наиболее близкий к роду кошек.</p>
+				<p>Рысь — типичная кошка, хотя величиной с крупную собаку, которую отчасти напоминает своим укороченным телом и длинноногостью. Очень характерна голова рыси: 
+				сравнительно небольшая, округлая и очень выразительная. Рост обычной рыси достигает 55 см, канадской от 48 см до 56 см, а пиренейской — от 60 до 70 см. 
+				От других кошачьих рыси отличаются коротким хвостом и кисточками на концах ушей. Масса тела рыси от 10 до 20 кг.</p>
+				<p>В скандинавской традиции рысь была священным животным богини Фрейи. Считалось, что рыси впряжены в её колесницу, но на самом деле это были кошки породы 
+				Норвежская лесная, похожие на рысь, или их предки лесные коты, чей ареал достигал Ютландии и Шотландии. Древние греки верили, что острый взор рыси способен 
+				пронзать насквозь непрозрачные предметы.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/slon.jpg" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Слон</h5>
+				</div>
+			</div>
+			<div>
+				<p>Слоны — это крупнейшие наземные млекопитающие, относящиеся к семейству слоновых (Elephantidae). Слоны известны своим впечатляющим размером, умом и социальным поведением.</p>
+				<p>Существует три основных вида слонов — африканский слон (Loxodonta africana), африканский лесной слон (Loxodonta cyclotis) и индийский слон (Elephas maximus). Африканские слоны крупнее, имеют большие уши и более изогнутые бивни, чем индийские.</p>
+				<p>Слоны могут достигать высоты до 4 метров в плечах и весить до 7 тонн (африканские слоны). Индийские слоны несколько меньше, достигая веса до 5 тонн.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/bear.jfif" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Медведь</h5>
+				</div>
+			</div>
+			<div>
+				<p>Бурый медведь (или обыкновенный медведь) — млекопитающее семейства медвежьих;
+				один из самых крупных наземных хищников и один из самых распространённых представителей семейства медвежьих.</p>
+				<p>Сейчас бурый медведь продолжает восстанавливать популяцию на большей части ареала; в остальных областях малочислен. В Западной Европе его разобщённые
+				 популяции сохранились на Пиренеях, Кантабрийских горах, Альпах и Апеннинах. Довольно распространён в Скандинавии и Финляндии, встречается в
+				 лесах Центральной Европы и в Карпатах. В Финляндии бурый медведь объявлен национальным животным.</p>
+				<p>Бурый медведь внесён в Красную книгу МСОП со статусом «вид, находящийся под угрозой», однако его численность сильно разнится от популяции к популяции. 
+				Наибольшая популяция обитает в России — свыше 300 000 особей, в США — 32 500(95 % живёт на Аляске) и Канаде — 21 750. В Европе сохранилось 
+				около 14 000 особей. К 2001 году в европейской части России популяция бурого медведя увеличилась и с тех пор постоянно растёт, в то время 
+				как на Кавказе и в Средней Азии напротив, численность уменьшилась.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-11 col-md-5 col-xl-3 overflow-hidden border border-2 border-dark border-opacity-50 p-2 m-3" style="height:400px">
+		<div class="d-flex flex-column h-100">
+			<div class="d-flex flex-row align-items-center">
+				<div class="w-50">
+					<img src="images/bear.jfif" class="w-100" alt="">
+				</div>
+				<div class="w-50">
+					<h5 class="text-primary">Медведь</h5>
+				</div>
+			</div>
+			<div>
+				<p>Бурый медведь (или обыкновенный медведь) — млекопитающее семейства медвежьих;
+				один из самых крупных наземных хищников и один из самых распространённых представителей семейства медвежьих.</p>
+				<p>Сейчас бурый медведь продолжает восстанавливать популяцию на большей части ареала; в остальных областях малочислен. В Западной Европе его разобщённые
+				 популяции сохранились на Пиренеях, Кантабрийских горах, Альпах и Апеннинах. Довольно распространён в Скандинавии и Финляндии, встречается в
+				 лесах Центральной Европы и в Карпатах. В Финляндии бурый медведь объявлен национальным животным.</p>
+				<p>Бурый медведь внесён в Красную книгу МСОП со статусом «вид, находящийся под угрозой», однако его численность сильно разнится от популяции к популяции. 
+				Наибольшая популяция обитает в России — свыше 300 000 особей, в США — 32 500(95 % живёт на Аляске) и Канаде — 21 750. В Европе сохранилось 
+				около 14 000 особей. К 2001 году в европейской части России популяция бурого медведя увеличилась и с тех пор постоянно растёт, в то время 
+				как на Кавказе и в Средней Азии напротив, численность уменьшилась.</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<footer class="bg-dark text-white text-left py-3">
+	<div class="container">
+		<h5>Автор: Старовойтов Алексей</h5>
+		<p>Email: starovoitov.ava@dvfu.ru</p>
+		<p class="text-end">&copy; 2024 Все права защищены</p>
+	</div>
+</footer>
+
+ 
+ </body>
+</html>
