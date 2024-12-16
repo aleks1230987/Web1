@@ -1,0 +1,36 @@
+mixin createMenu(menu, active)
+	each value, key in menu
+		if active == key
+			a.nav_active(href= value)= key
+		else
+			a(href= value)= key
+			
+mixin createSection(item)
+	section.section
+		div.section__one
+			div.section__one-img
+				img(src= require("./images/" + item.image))
+			div.section__one-h3
+				h3= item.header
+		div.section__two
+			p= item.text
+				a(href="#") &hellip;	
+
+mixin createMenuBuild(menu, active)
+	a(href= 'index.html')= 'Главная'
+	a.active(href= '#')= active
+	each value, key in menu
+		if  key != 'Главная'
+			a(href= value)= key
+			
+mixin tableGenerator(listAnimalsHeader, listAnimals)
+	table
+		thead
+			tr
+				each header in listAnimalsHeader
+					th= header
+		tbody
+			each animal in listAnimals
+				tr
+					each value in animal
+						td= value

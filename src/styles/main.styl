@@ -1,0 +1,166 @@
+colorText = #6f6d6d
+html
+	color colorText
+
+back(size)
+	background-color #f1f1f1
+	box-shadow 4px 5px 10px rgba(0, 0, 0, 0.4)
+	padding: size + "%"
+	margin 0 0 1% 0
+	
+	
+style-letter(size,Textcolor)
+	color Textcolor
+	font-size size
+	vertical-align middle
+	
+nav
+	back(0)
+	text-align right
+	
+	& a
+		display inline-block
+		padding 1%
+		color colorText
+		text-decoration: none
+
+		&:hover
+		&.active
+			background-color #f87777
+			color #f8f8f8 
+			
+div.lab
+	& p::first-letter 
+		style-letter(2rem,green)
+		
+			
+div.image
+	display flex
+	flex-direction column
+	back(1)
+	width: 70%
+	margin 30px auto
+	text-align center
+	overflow hidden
+	height 600px
+	align-items center
+	
+	div.image-puma
+		width 70%
+		
+		
+		& img
+			width 100%
+	
+	
+	
+	& h3
+		margin 5px 0
+		
+	& p
+		text-align left
+
+	
+article
+	width 90%
+	margin auto
+	display grid
+	grid-template-columns repeat(3, 1fr)
+	grid-gap 4%
+	
+	
+
+	.section
+		display flex
+		flex-direction column
+		back(2)
+		height 400px
+		
+		
+	
+		
+		&__one
+			display flex
+			flex-direction row
+			
+			
+			&-img
+				width 50%
+				
+			
+			&-h3
+				width 50%
+			
+			& img
+				width: 100%
+				height 200px
+			
+			
+		&__two
+			overflow hidden
+	& h3
+		margin 0
+		
+		
+		
+footer
+	background-color colorText
+
+	& h4
+		padding 5px
+		color #f8f8f8
+		
+div.image-one
+	text-align center
+	
+section
+	display grid
+	grid-template-columns 1fr 1fr
+
+@media (max-width: 600px){
+	div.images {
+		grid-template-columns 1fr
+		grid-template-rows repeat(5, 1fr)
+		padding: 1% 10% 10% 10%
+	}
+	article {
+		width: 100%
+		grid-template-columns 1fr
+		grid-template-rows repeat(3, 1fr)
+		gap: 1%
+		margin: 5% 0
+	}
+	section {
+		grid-template-columns 1fr
+		grid-template-rows 1fr
+	}
+}
+
+div.nav1
+	width 100%
+	height 400px
+	text-align center
+	
+	
+	& img
+		width 100%
+		height: 100%
+		
+details
+	& table
+		cellpadding 5
+
+div.table
+	& table
+		width 100%
+		text-align center
+		cellpadding 5
+		padding 5px
+	& tr
+		padding 5px
+		border: solid thin Navy
+	& td
+		border: solid thin Navy
+	& th
+		border: solid thin Navy
+	

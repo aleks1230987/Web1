@@ -1,0 +1,142 @@
+extends template
+
+block header
+	h2= 'Список'
+
+block nav
+	nav
+		+createMenu(dictMenu, 'Список')
+
+block content
+	details
+		summary= 'График'
+		table
+			tr
+				th= 'Значение по оси OX'
+				th= Результат
+			tr
+				td
+					input(type='radio' name='Type')
+					| Тип
+					br
+					input(type='radio' name='Otryad')
+					| Отряд
+					br
+					input(type='radio' name='Semeystvo')
+					| Семейство
+					br
+				td
+					input(type='checkbox' name='what')
+					| Число особей
+					br
+					input(type='checkbox' name='what')
+					| Максимальная длина тела
+					br
+					input(type='checkbox' name='what')
+					| Минимальная длина тела
+					br
+		input(type='submit' value='Построить')
+		p='Здесь будет график'
+	
+	details
+		summary='Фильтр'
+		
+		form
+			p='Наименование: '
+				input(type='text' placeholder='Введите наименование')
+			p='Тип: '
+				input(type='text' placeholder='Введите тип животного')
+			p='Отряд: '
+				input(type='text' placeholder='Введите отряд животного')
+			p='Семейство: '
+				input(type='text' placeholder='Введите семейство животного')
+				
+			p='Популяция: от '
+				input(type='number' placeholder='0' min='0' max='2000')
+				| До
+				input(type='number' placeholder='2000' min='0' max='2000')
+			p='Средняя длина: от '
+				input(type='number' placeholder='1' min='1' max='1000')
+				| До
+				input(type='number' placeholder='1000' min='1' max='1000')
+			p='Ареал обитания: '
+				input(type='text' placeholder='Введите место обитания')
+					
+		input(type='submit' value='Найти')
+		
+	details
+		summary='Сортировка'
+		| Первый уровень:  
+		select(name='1lv')
+			option(value='first' selected)
+				|Нет
+			option(value='second')
+				|Наименование
+			option(value='third')
+				|Тип
+			option(value='fourth')
+				|Отряд
+			option(value='fifth')
+				|Семейство
+			option(value='sixth')
+				|Популяция
+			option(value='seventh')
+				|Средняя длина тела
+			option(value='eighth')
+				|Ареал обитания
+		|По убыванию?
+		input(type='checkbox' name='1lv')
+		br
+			
+		| Второй уровень:  
+		select(name='2lv')
+			option(value='first' selected)
+				|Нет
+			option(value='second')
+				|Наименование
+			option(value='third')
+				|Тип
+			option(value='fourth')
+				|Отряд
+			option(value='fifth')
+				|Семейство
+			option(value='sixth')
+				|Популяция
+			option(value='seventh')
+				|Средняя длина тела
+			option(value='eighth')
+				|Ареал обитания
+		|По убыванию?
+		input(type='checkbox' name='2lv')
+		br
+		
+		| Третий уровень:  
+		select(name='3lv')
+			option(value='first' selected)
+				|Нет
+			option(value='second')
+				|Наименование
+			option(value='third')
+				|Тип
+			option(value='fourth')
+				|Отряд
+			option(value='fifth')
+				|Семейство
+			option(value='sixth')
+				|Популяция
+			option(value='seventh')
+				|Средняя длина тела
+			option(value='eighth')
+				|Ареал обитания
+		|По убыванию?
+		input(type='checkbox' name='3lv')
+		br
+		
+		p
+			input(type='submit' value='Сортировать')
+		br
+		br
+	
+	div.table
+		+tableGenerator(listAnimalsHeader, listAnimals)
+	

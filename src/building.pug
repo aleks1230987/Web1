@@ -1,0 +1,16 @@
+extends template
+
+block header
+	h2= 'Пума'
+
+block nav
+	nav
+		+createMenuBuild(dictMenu, 'Пума')
+
+block content
+	div.content_image_one
+		img.big(src= require("./images/" + listImagesNew[4]))
+	
+	section
+		each item in PumaText
+			p= item.Text
