@@ -1,0 +1,18 @@
+div {
+    padding: 5px;
+}
+
+.image {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.btn {
+    padding-left: 7px;
+}

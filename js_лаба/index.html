@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="image">
+        <img src="image2.png">
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Выбор входных данных</legend>
+            <input type="radio" id="in1" name="radio" value="in1" checked>
+            <label for="input1">Основание и прилежащий к нему угол</label>
+            <input type="radio" id="in2" name="radio" value="in2">
+            <label for="input2">Основание и противолежащий угол</label>
+        </fieldset>
+    </div>
+
+    <div class="btn">
+        <button type="button" onclick="CheckInput()">Показать</button>
+    </div>
+
+    <div>
+        <label for="num1">B = </label>
+        <input type="number" id="num1_1" name="num1_1" step="0.1" onclick="Clear(this)">
+        <br>
+        <br>
+        <label for="num2">b = </label>
+        <input type="number" id="num2_1" name="num2_1" step="0.1" onclick="Clear(this)">
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Вычисляемые характеристики</legend>
+
+            <div>
+                <input type="checkbox" id="H" name="H" onclick="ClearCheckbox()">
+                <label for="H">Высоты</label>
+            </div>
+            <div>
+                <input type="checkbox" id="r" name="r" onclick="ClearCheckbox()">
+                <label for="r">Радиус вписанной окружности</label>
+            </div>
+            <div>
+                <input type="checkbox" id="M" name="M" onclick="ClearCheckbox()">
+                <label for="M">Медианы</label>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="btn">
+        <button type="button" onclick="WriteResult()">Вычислить</button>
+        <button type="button" onclick="ClearAll()">Очистить</button>
+    </div>
+
+    <div id="conclusion">
+        Вывод:<br>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
