@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+      <meta charset="utf-8">
+      <title>Статистика</title>
+      <link rel="stylesheet" href="CSS/style.css">
+      <script src="js/data.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/table.js"></script>
+      <script src="js/filter.js"></script>
+      <script src="js/sort.js"></script>
+    </head>
+    <body>
+
+        
+        <a id="Table"></a>
+        <p>
+          <a href="Index.html#index">Дикие животные</a><br>
+          <a href="Statistics.html#Table"><strong>Список животных</strong></a>
+        </p>
+      <hr>   
+
+        
+<details> 
+  <summary>График</summary>
+
+<table cellpadding="5">
+  <tr> 
+    <th>Значение по оси OX</th>
+    <th>Результат</th>
+  </tr>
+
+  <tr>
+    <td>
+      <input  type="radio"  name="Type">"Тип"<br>
+    <input  type="radio"  name="Otryad">"Отряд"<br>
+    <input  type="radio"  name="Semeystvo">"Семейство"<br>
+  </td>
+
+  <td>
+    <input type="checkbox" name="what"> Число особей<br>
+    <input type="checkbox" name="what"> Максимальная длина тела <br>
+    <input type="checkbox" name="what"> Минимальная длина тела <br>
+  </td>
+</tr>
+</table>
+
+<p>
+  <input type="submit" value="Построить">
+</p>
+<p>Здесь будет график</p>
+
+</details>
+
+
+<details> 
+  <summary>Фильтр</summary>
+
+  <form id="filter">
+    <p>
+      Наименование: <input type="text" id="naming">
+    </p>
+    <p>
+      Тип: <input type="text" id="type">
+    </p>
+    <p>
+      Отряд: <input type="text" id="otryad">
+    </p>
+    <p>
+      Семейство: <input type="text" id="family">
+    </p>
+    <p>
+      Популяция: от <input type="number" min="0" max="2000" id="popFrom"> до <input type="number" min="0" max="2000" id="popTo">
+    </p>
+    <p>
+      Средняя длина тела: от <input type="number" min="1" max="1000" id="lengthFrom"> до <input type="number" min="1" max="1000" id="lengthTo">
+    </p>
+    <p>
+      Ареал обитания: <input type="text" id="area">
+    </p>
+    <div>
+      <input id ="searhFilter" type="button" value="Найти">
+      <input id ="clearFilter" type="button" value="Очистить фильтры">
+    </div>
+  </form>
+  
+  
+  <p></p>
+
+</details>
+
+
+<details> 
+  <summary>Сортировка</summary>
+  <form id="sort">
+    <h3>Сортировка</h3>
+    <p> Сортировать по</p>
+    <p>
+      <select id="fieldsFirst">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+    </p>
+    <p> 
+      <select id="fieldsSecond">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+    </p>
+    <p> 
+      <select id="fieldsThird">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsThirdDesc">
+    </p>
+    <input id="sortOn" type="button" value="Сортировать"> 
+    <input id="sortOff" type="button" value="Сбросить сортировку">
+  </form>
+
+</details>
+
+<p></p>
+<table id="list">
+  
+</table>
+
+    </body>
+</html>
