@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="http://d3js.org/d3.v7.min.js"> </script>
+  <script src="JavaScript/data.js"></script>
+  <script src="JavaScript/main.js"></script>
+  <script src="JavaScript/table.js"></script>
+  <script src="JavaScript/chart.js"></script>
+</head>
+<body>   
+  <h3>Список самых высоких зданий</h3>
+
+  <div>
+    <fieldset>
+      <legend>Значение по оси OX</legend>
+      <div>
+        <input type="radio" id="country" value="Страна" name="ox" checked>
+        <label for="country">Страна</label>
+      </div>
+      <div>
+        <input type="radio" id="year" value="Год" name="ox">
+        <label for="year">Год</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div>
+    <fieldset>
+      <legend>Значение по оси OY</legend>
+      <div>
+        <input type="checkbox" id="maxHeight" name="Height" value="maxHeight" checked>
+        <label for="maxHeight">Максимальная высота</label>
+      </div>
+      <div>
+        <input type="checkbox" id="minHeight" name="Height" value="minHeight">
+        <label for="minHeight">Минимальная высота</label>
+      </div>
+    </fieldset>
+  </div>
+  
+  <div>
+    <label for="graph-select">Тип графика</label>
+    <select name="graph" id="graph-select">
+      <option value="point">Точечная</option>
+      <option value="gysto">Гистограмма</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    <input type="button" id="draw" value="Построить график">
+  </div>
+
+  <svg></svg>
+  
+  <br>
+  <div>
+    <input type="button" id="TableOn" value="Скрыть таблицу">
+  </div>
+  <table id="build"> </table>
+</body>
+</html>
