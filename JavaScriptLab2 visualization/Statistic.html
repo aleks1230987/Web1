@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+      <meta charset="utf-8">
+      <title>Статистика</title>
+      <link rel="stylesheet" href="CSS/style.css">
+      <script src="http://d3js.org/d3.v7.min.js"> </script>
+      <script src="js/data.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/table.js"></script>
+      <script src="js/filter.js"></script>
+      <script src="js/sort.js"></script>
+      <script src="js/chart.js"></script>
+    </head>
+    <body>
+
+        
+        <a id="Table"></a>
+        <p>
+          <a href="Index.html#index">Дикие животные</a><br>
+          <a href="Statistics.html#Table"><strong>Список животных</strong></a>
+        </p>
+      <hr>   
+
+        
+<details> 
+  <summary>График</summary>
+
+<table cellpadding="5">
+  <tr> 
+    <th>Значение по оси OX</th>
+    <th>Результат</th>
+  </tr>
+
+  <tr>
+    <td>
+      <div>
+        <input  type="radio"  name="ox" id="type" value="Тип" checked>
+        <label for="type">Тип</label>
+      </div>
+
+      <div>
+        <input  type="radio"  name="ox" id="otryad" value="Отряд" >
+        <label for="otryad">Отряд</label>
+      </div>
+
+      <div>
+        <input  type="radio"  name="ox" id="semeystvo" value="Семейство">
+        <label for="semeystvo">Семейство</label>
+      </div>
+    
+  </td>
+
+  <td>
+
+    <div>
+      <input type="checkbox" id="maxLength" name="Length" value="maxLength" checked>
+      <label for="maxLength">Максимальная длина тела</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="minLength" name="Length" value="minLength">
+      <label for="minLength">Минимальная длина тела</label>
+    </div>
+
+  </td>
+</tr>
+</table>
+<p></p>
+<div>
+  <label for="graph-select">Тип графика</label>
+  <select name="graph" id="graph-select">
+    <option value="point">Точечная</option>
+    <option value="gysto">Гистограмма</option>
+    <option value="graph">График</option>
+  </select>
+</div>
+
+<p>
+  <input type="submit" value="Построить" id="draw">
+</p>
+<svg></svg>
+</details>
+
+
+
+<details> 
+  <summary>Фильтр</summary>
+
+  <form id="filter">
+    <p>
+      Наименование: <input type="text" id="naming">
+    </p>
+    <p>
+      Тип: <input type="text" id="type">
+    </p>
+    <p>
+      Отряд: <input type="text" id="otryad">
+    </p>
+    <p>
+      Семейство: <input type="text" id="family">
+    </p>
+    <p>
+      Популяция: от <input type="number" min="0" max="2000" id="popFrom"> до <input type="number" min="0" max="2000" id="popTo">
+    </p>
+    <p>
+      Средняя длина тела: от <input type="number" min="1" max="1000" id="lengthFrom"> до <input type="number" min="1" max="1000" id="lengthTo">
+    </p>
+    <p>
+      Ареал обитания: <input type="text" id="area">
+    </p>
+    <div>
+      <input id ="searhFilter" type="button" value="Найти">
+      <input id ="clearFilter" type="button" value="Очистить фильтры">
+    </div>
+  </form>
+  
+  
+  <p></p>
+
+</details>
+
+
+<details> 
+  <summary>Сортировка</summary>
+  <form id="sort">
+    <h3>Сортировка</h3>
+    <p> Сортировать по</p>
+    <p>
+      <select id="fieldsFirst">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+    </p>
+    <p> 
+      <select id="fieldsSecond">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+    </p>
+    <p> 
+      <select id="fieldsThird">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsThirdDesc">
+    </p>
+    <input id="sortOn" type="button" value="Сортировать"> 
+    <input id="sortOff" type="button" value="Сбросить сортировку">
+  </form>
+
+</details>
+
+<p></p>
+<table id="list">
+  
+</table>
+
+    </body>
+</html>

@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    background: rgb(199, 198, 198);
+}
+td {
+    background: rgb(233, 230, 230);
+}
+
+svg {
+    width: 1000px;
+    height: 500px;
+}
+svg text {
+    font: 8px Verdana;
+}
+svg path, line {
+    fill: none;
+    stroke: #333333;
+    width: 1px;
+}
