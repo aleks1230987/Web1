@@ -1,0 +1,120 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+table {
+  border: 2px solid gray;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+table th {
+  background-color: lightgray;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid gray;
+}
+table td {
+  padding: 10px;
+  border: 2px solid gray;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+  
+}
+
+.show {
+  display: table-row;
+  
+}
+
+.pagination {
+  margin-top: 20px;
+  padding: 10px;
+  user-select: none;
+}
+
+.pagination span {
+  margin: 0 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.pagination .current-page {
+  color: blue;
+  font-weight: bold;
+}
+
+.pagination span:not(.current-page):hover {
+  background-color: #e3e3e3;
+}
+
+.checkTitle-title {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #ddd;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.checkTitle-content {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+svg {
+    width: 800px;
+    height: 400px;
+}
+
+svg path, line {
+    fill: none;
+    stroke: black;
+    width: 1px;
+}
+ 
+svg text {
+    font: 8px Verdana;
+}
+
